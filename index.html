@@ -333,13 +333,13 @@
             window.location.replace('https://www.rocketauto.com/');
         })
   
-   var custom_data = {};
+        var custom_data = {};
     
     $(".custom-data").change(function(){
       console.log(this.id);
       custom_data[this.id] = this.value;
       _ps('set', 'custom_data', custom_data );
-      /*_ps("send", "updated");*/
+      _ps("send", "updated");
   
     });
 
